@@ -18,6 +18,10 @@ body {
 .gu-navbar {
   background: var(--black);
   color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .logo {
   object-fit: cover;
@@ -29,19 +33,17 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-left: 2rem;
 }
 .nav-list {
+  margin: 0;
   gap: 1rem;
 }
 .nav-search-div {
   display: inline-flex;
   flex-wrap: nowrap;
   width: 15rem;
-  margin-right: 2rem;
 }
 .nav-search {
-  padding: 0 1rem;
   border-radius: 0;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -181,7 +183,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .card-display-container {
     grid-template-columns: 1fr;
   }
