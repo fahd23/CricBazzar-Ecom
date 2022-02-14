@@ -1,0 +1,30 @@
+/* responsive */
+
+@media screen and (min-width: 1300px) {
+  .banner-img {
+    width: 100%;
+    height: calc(100vh - 18vh);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .card-display-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .nav-category {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .card-display-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-overlay {
+    font-size: 1.5rem;
+  }
+  .shop-now-btn {
+    padding: 0.8rem 1.2rem;
+  }
+  .nav-search-div {
+    display: none;
+  }
+}
