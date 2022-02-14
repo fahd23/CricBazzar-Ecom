@@ -1,0 +1,109 @@
+@import url(/main.css);
+
+/* Banner IMG */
+.banner-img-container {
+  position: relative;
+}
+.text-overlay-container {
+  font-family: "Quintessential", cursive;
+  color: var(--primary-color);
+  position: absolute;
+  right: 8%;
+  top: 30%;
+  font-size: 1.7rem;
+}
+.shop-now-btn {
+  font-weight: 600;
+  margin: 1rem 0;
+  margin-left: 35%;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+}
+.shop-now-btn:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+/* card */
+.card-info {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  color: var(--primary-color);
+  font-size: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-title {
+  font-size: 1.2rem;
+}
+.card-display-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 5rem;
+}
+.grid-container {
+  width: 85%;
+  margin: 2rem auto;
+}
+
+/* section feautured */
+.featured-cards {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section-title {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+.offer-info {
+  color: greenyellow;
+}
+
+/* responsive */
+
+@media screen and (min-width: 1300px) {
+  .banner-img {
+    width: 100%;
+    height: calc(100vh - 18vh);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .card-display-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .nav-category {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .card-display-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-overlay {
+    font-size: 1.5rem;
+  }
+  .shop-now-btn {
+    padding: 0.8rem 1.2rem;
+  }
+  .nav-search-div {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card-display-container {
+    grid-template-columns: 1fr;
+  }
+}

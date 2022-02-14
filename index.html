@@ -8,19 +8,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://grapheneui.netlify.app/Components/components.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>CricBazaar</title>
   </head>
   <body>
     <nav class="gu-navbar">
       <div class="nav-logo">
         <img class="logo" src="Assets/logo.png" alt="cric-img" />
-        CricBazzar
+        <a href="/">CricBazzar</a>
       </div>
+
       <div class="nav-search-div">
         <input class="nav-search" type="search" placeholder="search..." />
         <i class="search-icon fa-solid fa-magnifying-glass"></i>
@@ -94,10 +91,15 @@
       </a>
     </nav>
     <!-- Banner Image -->
-    <section class="banner-img">
-      <img src="/Assets/banner1.jpg" alt="Banner-img" width="100%" />
-      <div class="text-overlay">
-        <h2>Exclusive Offers on SG and Kookaburra Brands</h2>
+    <section class="banner-img-container">
+      <img
+        class="banner-img"
+        src="/Assets/banner1.jpg"
+        alt="Banner-img"
+        width="100%"
+      />
+      <div class="text-overlay-container">
+        <h2 class="text-overlay">Branded Products boost your confidence</h2>
         <button class="btn shop-now-btn">SHOP NOW</button>
       </div>
     </section>
@@ -262,7 +264,30 @@
 
     <!-- footer -->
     <footer class="footer">
-      <p class="p-sm">© Code by Fahd - CricBazzar ONLINE STORE | 2022</p>
+      <a
+        class="footer-icon fab fa-github-square"
+        target="_blank"
+        href="https://github.com/fahd23"
+        aria-hidden="true"
+      ></a>
+      <a
+        class="footer-icon fab fa-linkedin"
+        target="_blank"
+        href="https://www.linkedin.com/in/sn-fahd/"
+        aria-hidden="true"
+      ></a>
+      <a
+        class="footer-icon fab fa-twitter"
+        target="_blank"
+        href="https://twitter.com/Snfahd_"
+        aria-hidden="true"
+      ></a>
+      <a
+        class="footer-icon fas fa-envelope"
+        href="mailto:fahdpno@email.com"
+        aria-hidden="true"
+      ></a>
+      <p class="p-sm">© Code by Fahd | CricBazzar | 2022</p>
     </footer>
   </body>
 </html>
