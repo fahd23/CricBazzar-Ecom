@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="wishlist.css" />
+    <title>CricBazaar | Wishlist</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="gu-navbar">
+      <div class="nav-logo">
+        <img class="logo" src="/Assets/logo.png" alt="cric-img" />
+        <a href="/">CricBazzar</a>
+      </div>
+
+      <div class="nav-search-div">
+        <input class="nav-search" type="search" placeholder="search..." />
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <a
+            id="login-btn"
+            class="nav-list-item"
+            href="/authentication/login.html"
+            >Login</a
+          >
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="/wishlist/wishlist.html">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-heart"></i>
+                <span class="notify-num">1</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="#">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="notify-num">5</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Body section for Wishlist -->
+    <h2 class="h2 wishlist-title">My Wishlist</h2>
+    <div class="wishlist-display">
+      <div class="card vertical-card-container card-with-shadow">
+        <div class="card-img">
+          <img
+            class="vertical-card-img"
+            src="/Assets/Cricket-bat.jpg"
+            alt="bat-img"
+          />
+          <span class="favorite-btn"><i class="fa-solid fa-heart"></i></span>
+        </div>
+
+        <div class="card-info">
+          <h2 class="card-title">Kookaburra Bat</h2>
+          <h3 class="subtitle">Extreme power</h3>
+          <div class="card-body">
+            <div>
+              <p class="disc-price">₹3500</p>
+              <p class="actual-price">₹7000</p>
+              <p class="offer-info">(50% OFF)</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-link call-to-action vertical-btn">
+              Move to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card vertical-card-container card-with-shadow">
+        <div class="card-img">
+          <img
+            class="vertical-card-img"
+            src="/Assets//cricket-ball.jpeg"
+            alt="bat-img"
+          />
+          <span class="favorite-btn"><i class="fa-solid fa-heart"></i></span>
+        </div>
+
+        <div class="card-info">
+          <h2 class="card-title">Leather Ball</h2>
+          <h3 class="subtitle">Standard Size</h3>
+          <div class="card-body">
+            <div>
+              <p class="disc-price">₹300</p>
+              <p class="actual-price">₹399</p>
+              <p class="offer-info">(25% OFF)</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-link call-to-action vertical-btn">
+              Move to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card vertical-card-container card-with-shadow">
+        <div class="card-img">
+          <img
+            class="vertical-card-img"
+            src="/Assets/cricket shoe.jpg"
+            alt="bat-img"
+          />
+          <span class="favorite-btn"><i class="fa-solid fa-heart"></i></span>
+        </div>
+
+        <div class="card-info">
+          <h2 class="card-title">Kookaburra Shoe</h2>
+          <h3 class="subtitle">With Spikes</h3>
+          <div class="card-body">
+            <div>
+              <p class="disc-price">₹1500</p>
+              <p class="actual-price">₹3000</p>
+              <p class="offer-info">(50% OFF)</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-link call-to-action vertical-btn">
+              Move to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
