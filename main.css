@@ -21,7 +21,13 @@ body {
   font-size: 100%;
   background-color: var(--primary-color);
 }
-
+/* utilities */
+.flex {
+  display: flex;
+}
+.sp-bwtn {
+  justify-content: space-between;
+}
 /* navbar */
 .gu-navbar {
   background: var(--black);
