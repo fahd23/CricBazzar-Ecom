@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <title>CricBazaar | Cart</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="gu-navbar">
+      <div class="nav-logo">
+        <img class="logo" src="/Assets/logo.png" alt="cric-img" />
+        <a href="/">CricBazzar</a>
+      </div>
+
+      <div class="nav-search-div">
+        <input class="nav-search" type="search" placeholder="search..." />
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <a
+            id="login-btn"
+            class="nav-list-item"
+            href="/authentication/login.html"
+            >Login</a
+          >
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="/wishlist/wishlist.html">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-heart"></i>
+                <span class="notify-num">1</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="/cart/cart.html">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="notify-num">5</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Body section for Cart -->
+    <h2 class="h2 cart-title">My Cart</h2>
+    <div class="cart-display">
+      <div class="card horizontal-card-container card-with-shadow">
+        <div class="card-img">
+          <img
+            class="horizontal-card-img"
+            src="/Assets/cricket shoe.jpg"
+            alt="Shoe-img"
+          />
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">Nike Shoe</h2>
+          <div class="card-body">
+            <div>
+              <p class="disc-price">₹850</p>
+              <p class="actual-price">₹1700</p>
+              <p class="offer-info">(50% OFF)</p>
+            </div>
+            <div>
+              <h3>
+                Quantity:
+                <input type="number" id="quantity-input" value="1" min="1" />
+              </h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn default">Remove from Cart</button>
+            <button class="btn otld-default">Move to Wishlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price details -->
+      <div class="card text-only-card card-with-shadow">
+        <h2>Price details</h2>
+        <hr />
+        <div class="card-body">
+          <div class="flex sp-bwtn">
+            <h4>Price</h4>
+            <p>₹850</p>
+          </div>
+          <div class="flex sp-bwtn">
+            <h4>Discount</h4>
+            <p>50% off</p>
+          </div>
+          <div class="flex sp-bwtn">
+            <h4>Delivery Charges</h4>
+            <p>₹50</p>
+          </div>
+          <hr />
+          <div class="flex sp-bwtn">
+            <h3>Total Amount</h3>
+            <p>₹900</p>
+          </div>
+          <hr />
+          <h4>You will save ₹850 on this order</h4>
+          <button class="btn success">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -152,7 +152,7 @@ body {
   margin: 1rem;
 }
 .offer-info {
-  color: greenyellow;
+  color: var(--success);
 }
 /* footer */
 .footer {
