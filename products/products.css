@@ -1,0 +1,47 @@
+@import url(/main.css);
+@import url(/responsive.css);
+/* body */
+.filters-aside {
+  display: flex;
+  flex-direction: column;
+  min-width: 18.5rem;
+  padding: 1rem 2rem;
+  gap: 1.8rem;
+  background-color: var(--secondary-color);
+}
+/* Clear Filter */
+.clear-txt {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+/* Range Slider Div*/
+.slider {
+  width: 100%;
+}
+/* Input Range Itself */
+.range-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+/* product-display */
+.title {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  font-size: 1.6rem;
+}
+.product-display {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7rem;
+}
+/*Favorite-btn*/
+.favorite-btn {
+  position: absolute;
+  right: 1.3rem;
+  top: 1.3rem;
+  color: var(--danger);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
