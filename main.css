@@ -28,6 +28,28 @@ body {
 .sp-bwtn {
   justify-content: space-between;
 }
+.flex-clm {
+  display: flex;
+  flex-direction: column;
+}
+.sp-around {
+  justify-content: space-around;
+}
+.align-itm-c {
+  align-items: center;
+}
+.gap-10 {
+  gap: 10px;
+}
+.margin-vert {
+  margin-bottom: 1rem;
+}
+.margin-top {
+  margin-top: 1rem;
+}
+.margin-btm {
+  margin-bottom: 1rem;
+}
 /* navbar */
 .gu-navbar {
   background: var(--black);

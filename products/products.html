@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <title>CricBazaar | Cart</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="gu-navbar">
+      <div class="nav-logo">
+        <img class="logo" src="/Assets/logo.png" alt="cric-img" />
+        <a href="/">CricBazzar</a>
+      </div>
+
+      <div class="nav-search-div">
+        <input class="nav-search" type="search" placeholder="search..." />
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <a
+            id="login-btn"
+            class="nav-list-item"
+            href="/authentication/login.html"
+            >Login</a
+          >
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="/wishlist/wishlist.html">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-heart"></i>
+                <span class="notify-num">1</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+        <ul>
+          <a class="nav-list-item" href="/cart/cart.html">
+            <div class="gu-badge">
+              <span class="gu-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="notify-num">5</span>
+              </span>
+            </div>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Body section for Cart -->
+    <div class="flex">
+      <!-- sidebar -->
+      <aside class="filters-aside">
+        <div class="filter-title flex sp-bwtn align-itm-c">
+          <h2>Filters</h2>
+          <a class="clear-txt" href="/products/products.html">Clear</a>
+        </div>
+
+        <div>
+          <h2 class="margin-btm">Price</h2>
+          <div>
+            <div class="range flex sp-bwtn para-sm">
+              <p>100</p>
+              <p>4500</p>
+              <p>10000</p>
+            </div>
+
+            <div class="slider">
+              <input
+                type="range"
+                class="range-slider"
+                min="100"
+                max="10000"
+                value="4500"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="margin-btm">Category</h2>
+
+          <div class="flex-clm gap-10 para-sm">
+            <label class="checkbox">
+              <input class="check-input" type="checkbox" />
+              <span>Men</span>
+            </label>
+
+            <label class="checkbox">
+              <input class="check-input" type="checkbox" />
+              <span>Women </span>
+            </label>
+
+            <label class="checkbox">
+              <input class="check-input" type="checkbox" />
+              <span>Kids </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="rating">
+          <h2 class="margin-btm">Rating</h2>
+
+          <div class="flex-clm gap-10 para-sm">
+            <label>
+              <input type="radio" name="rate" />
+              <span> 4 Stars and above</span>
+            </label>
+            <label>
+              <input type="radio" name="rate" />
+              <span>3 Stars and above </span>
+            </label>
+            <label>
+              <input type="radio" name="rate" />
+              <span>2 Stars and above </span>
+            </label>
+            <label>
+              <input type="radio" name="rate" />
+              <span>1 Stars and above </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="sort">
+          <h2 class="margin-btm">Sort by</h2>
+
+          <div class="flex-clm gap-10">
+            <label>
+              <input type="radio" name="sort" />
+              <span>Price - High to Low</span>
+            </label>
+            <label>
+              <input type="radio" name="sort" />
+              <span>Price - Low to High </span>
+            </label>
+          </div>
+        </div>
+      </aside>
+      <!-- Product Display -->
+
+      <div>
+        <h2 class="title">
+          Showing All Products
+          <span class="para-sm grey-text">(Showing 6 products)</span>
+        </h2>
+        <div class="product-display">
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets/Cricket-bat.jpg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Kookaburra Bat</h2>
+              <h3 class="subtitle">Extreme power</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹3500</p>
+                  <p class="actual-price">₹7000</p>
+                  <p class="offer-info">(50% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets//cricket-ball.jpeg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-solid fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Leather Ball</h2>
+              <h3 class="subtitle">Standard Size</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹300</p>
+                  <p class="actual-price">₹399</p>
+                  <p class="offer-info">(25% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets/cricket shoe.jpg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-solid fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Kookaburra Shoe</h2>
+              <h3 class="subtitle">With Spikes</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹1500</p>
+                  <p class="actual-price">₹3000</p>
+                  <p class="offer-info">(50% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets/Cricket-bat.jpg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Kookaburra Bat</h2>
+              <h3 class="subtitle">Extreme power</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹3500</p>
+                  <p class="actual-price">₹7000</p>
+                  <p class="offer-info">(50% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets/Cricket-bat.jpg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-solid fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Kookaburra Bat</h2>
+              <h3 class="subtitle">Extreme power</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹3500</p>
+                  <p class="actual-price">₹7000</p>
+                  <p class="offer-info">(50% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card vertical-card-container card-with-shadow">
+            <div class="card-img">
+              <img
+                class="vertical-card-img"
+                src="/Assets/Cricket-bat.jpg"
+                alt="bat-img"
+              />
+              <span class="favorite-btn"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+
+            <div class="card-info">
+              <h2 class="card-title">Kookaburra Bat</h2>
+              <h3 class="subtitle">Extreme power</h3>
+              <div class="card-body">
+                <div>
+                  <p class="disc-price">₹3500</p>
+                  <p class="actual-price">₹7000</p>
+                  <p class="offer-info">(50% OFF)</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-link call-to-action vertical-btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
