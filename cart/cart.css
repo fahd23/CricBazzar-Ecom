@@ -23,6 +23,7 @@ hr {
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 .horizontal-card-container {
   display: flex;

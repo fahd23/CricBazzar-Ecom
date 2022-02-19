@@ -13,7 +13,7 @@
 }
 .wishlist-display {
   width: 90%;
-  margin: 2rem auto;
+  margin: 2rem auto 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
