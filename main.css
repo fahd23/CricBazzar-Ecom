@@ -116,6 +116,40 @@ body {
   font-weight: 600;
   margin-left: 1rem;
 }
+#btn-ham-burger {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 0;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  display: none;
+}
+.hamBurger-div {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  border-bottom-left-radius: 1.3rem;
+  z-index: 5;
+  display: none;
+}
+.hamBurger-div ul {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.hamBurger-div ul a {
+  color: var(--primary-color);
+}
+.close-sideBar-btn {
+  margin-top: 1rem;
+  margin-left: auto;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
 /* nav-category */
 .nav-category {
   background-color: var(--accent-color);
@@ -181,11 +215,13 @@ body {
   width: 100%;
   background: var(--black);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 1.5rem;
   line-height: 2rem;
   font-size: 1.2rem;
   color: var(--primary-color);
+  gap: 1rem;
 }
 .footer a {
   text-decoration: none;
