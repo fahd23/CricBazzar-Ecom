@@ -1,5 +1,5 @@
 # CricBazaar
-CricBazaar is an e-commerce website for Cricketers,here are some feature mentioned below
+[CricBazaar](https://cricbazzar.netlify.app/) is an e-commerce website for Cricketers,here are some feature mentioned below
 # Features
 1. [Home page](https://cricbazzar.netlify.app/)
 2. [Wishlist page](https://cricbazzar.netlify.app/wishlist/wishlist.html)
